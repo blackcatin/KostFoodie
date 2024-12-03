@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 70vh;
+}
+
+section nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: #d9ebf7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10; 
+    padding: 10px 80px;;
+}
+
+section nav .logo img{
+    width: auto;
+    height: 35px;
+    object-fit: contain;
+    cursor: pointer;
+    display: block;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #5c5db0;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff3f34;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #ff3f34;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #5c5db0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #ff3f34;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #5c5db0;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.video-text h2 {
+    font-size: 3rem;
+    color: #d9ebf7;
+    font-family: Mansalva;
+}
+.video-text h1{
+    font-size: 3rem;
+    color: #e5965a;
+    margin-bottom: 10px;
+
+}
+
+.video-text .line {
+    width: 215px;
+    height: 5px;
+    background: #d9ebf7;
+    margin: 10px auto;
+    border-radius: 4px;
+    margin-left: 0;
+    margin: 0 0 20px 0;
+}
+
+.video-text p {
+    font-size: 1rem;
+    color: #d9ebf7;
+    max-width: 400px;
+    font-weight: 400;
+}
+
+.video-box iframe {
+    border-radius: 8px;
+}
+
+
+/* Section for Tips */
+.tips-section {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 200px; 
+}
+
+.tips-section .line {
+    width: 215px;
+    height: 5px;
+    background: #e9802e;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.tips-section h1 {
+    font-size: 2.5rem;
+    color: #e9802e;
+    margin-bottom: 5px;
+    font-family: Mansalva;
+}
+
+.tips-section h2{
+    font-size: 2.5rem;
+    color: #5c5db0;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.tip-card {
+    background-color: #5c5db0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.tip-card p {
+    font-size: 1rem;
+    color: #d9ebf7;
+    margin: 0 20px 20px;
+}
+
+.review {
+    width: 100%;
+    padding: 60px 0;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.review h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.review h1 span {
+    color: #e9802e;
+    margin-right: 15px;
+    font-family: 'MV Boli', sans-serif;
+}
+
+.review h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e9802e;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.review .review_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.review .review_main .review_image img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 80px;
+    margin-right: 0;
+    padding-left: 100px;
+}
+
+.review .review_main form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.review .review_main form .input p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.review .review_main form .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.review .review_main form .input input,
+.review .review_main form .input select,
+.review .review_main form .input textarea {
+    width: 100%;
+    padding: 10px;
+    max-width:600px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.review .review_main form .input input:focus,
+.review .review_main form .input textarea:focus,
+.review .review_main form .input select:focus {
+    border: 2px solid #fac031;
+}
+
+.review .review_main form .review_btn {
+    padding: 10px 20px;
+    background: #e9802e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.review .review_main form .review_btn:hover {
+    background: #d26f24;
+    transform: scale(1.05);
+}
+
+
+/* .upload {
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.upload h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.upload h1 span {
+    color: #e9802e;
+    margin-right: 15px;
+    font-family: 'MV Boli', sans-serif;
+}
+
+.upload h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e9802e;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.upload .upload_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.upload .upload_main .upload_image img {
+    width: 600px;
+}
+
+.upload .upload_main form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.upload .upload_main form .input p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.upload .upload_main form .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload .upload_main form .input input,
+.upload .upload_main form .input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 5px;
+}
+
+.upload .upload_main form .input input:focus,
+.upload .upload_main form .input textarea:focus {
+    border: 2px solid #fac031;
+}
+
+.upload .upload_main form .upload_btn {
+    padding: 10px 20px;
+    background: #e9802e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.upload .upload_main form .upload_btn:hover {
+    background: #d26f24;
+    transform: scale(1.05);
+}
+ */
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background-color: #5c5db0;
+    color: #fff;
+
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    color: #fff;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #e9802e;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #fff;
+}
+
+footer .end span{
+    color: #e9802e;
+    margin-left: 10px;
+}

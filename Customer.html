@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Triks</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="Images/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="Customer.html">Tips&Triks</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+
+        </nav>
+
+        <section class="video-section">
+            <div class="video-text-container">
+                <div class="video-text">
+                    <h2>Watch Our</h2>
+                    <div class="line"></div>
+                    <h1>"Cooking Tips"</h1>
+                    <p>Tonton video terbaru kami untuk mempelajari beberapa kiat cepat tentang membuat makanan dengan anggaran terbatas.</p>
+                </div>
+                <div class="video-box">
+                    <iframe width="500" height="300" src="video/Cinematic Indomie B-Roll (Masak Indomie With Style).mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h1>Tips and Tricks</h1> 
+            <div class="line"></div>
+                <h2>for Your Kitchen</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <img src="Images/1la.jpg" alt="Tip Image">
+                    <h3>Quick Meal Prep</h3>
+                    <p>Hemat waktu di dapur dengan tips persiapan makanan ini yang dapat Anda gunakan selama seminggu penuh.</p>
+                </div>
+                <div class="tip-card">
+                    <img src="Images/2la.jpg" alt="Tip Image">
+                    <h3>Healthy Snack Ideas</h3>
+                    <p>Cobalah camilan mudah dan sehat ini yang tidak memerlukan banyak waktu untuk membuatnya.</p>
+                </div>
+                <div class="tip-card">
+                    <img src="Images/3la.jpg" alt="Tip Image">
+                    <h3>Budget-Friendly Meals</h3>
+                    <p>Hidangan lezat dan bergizi, ramah di kantong!</p>
+                </div>
+                <div class="tip-card">
+                    <img src="Images/4la.jpg" alt="Tip Image">
+                    <h3>Cooking with Leftovers</h3>
+                    <p>Ubahlah sisa makanan menjadi makanan baru tanpa terbuang sia-sia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+<div class="review" id="Reviews">
+    <h1><span>Customer</span> Reviews</h1>
+
+    <div class="review_main">
+        <div class="review_image">
+            <img src="Images/customer.png" alt="Customer Feedback">
+        </div>
+
+        <form action="#" method="post">
+            <div class="input">
+                <p>Your Name</p>
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="input">
+                <p>Email</p>
+                <input type="email" placeholder="Your email" required>
+            </div>
+
+            <div class="input">
+                <p>Your Rating</p>
+                <select required>
+                    <option value="" disabled selected>Choose Rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ - Good</option>
+                    <option value="3">⭐⭐⭐ - Average</option>
+                    <option value="2">⭐⭐ - Poor</option>
+                    <option value="1">⭐ - Bad</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <p>Your Feedback</p>
+                <textarea placeholder="Write your feedback here..." rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="review_btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Upload Form
+<div class="upload" id="Upload">
+    <h1><span>Share</span> Your Recipe or Tips!</h1>
+
+    <div class="upload_main">
+
+        <div class="upload_image">
+            <img src="image/upload_image.png" alt="Upload Image">
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <div class="input">
+                <p>Your Name</p>
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="input">
+                <p>Email</p>
+                <input type="email" placeholder="Your email" required>
+            </div>
+
+            <div class="input">
+                <p>Recipe or Tips Title</p>
+                <input type="text" placeholder="Enter title" required>
+            </div>
+
+            <div class="input">
+                <p>Description</p>
+                <textarea placeholder="Brief description (max 300 words)" rows="4" required></textarea>
+            </div>
+
+            <div class="input">
+                <p>Upload Image</p>
+                <input type="file" accept="image/*" required>
+            </div>
+
+            <div class="input">
+                <p>Full Recipe or Tips</p>
+                <textarea placeholder="Write your recipe or tips here..." rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="upload_btn">Submit</button>
+
+        </form>
+
+    </div>
+</div> -->
+
+
+
+          
+
+        <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Bandung</p>
+                <p>Bogor</p>
+                <p>Bekasi</p>
+                <p>Surabaya</p>
+                <p>Semarang</p>
+            </div>
+
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+62 12 3456 789</p>
+                <p>+62 25 5568456</p>
+                <p>firlanaumi@gmail.com</p>
+                <p>umifirlana4@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Request Recipes</p>
+                <p>Recipes Sharing</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Copyright ©2024 KostFoodie</p>
+
+    </footer>
