@@ -3,13 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f9; /* Light background for default mode */
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 
 section{
     width: 100%;

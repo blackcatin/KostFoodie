@@ -455,3 +455,12 @@ footer .end span{
     color: #e9802e;
     margin-left: 10px;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: #5c5db0;
+}
