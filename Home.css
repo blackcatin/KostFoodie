@@ -411,6 +411,19 @@ input:checked + label .description {
     transition: 0.3s;
 }
 
+.gallary .gallary_image_box .gallary_image .gallary_btn:hover{
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: #ffff;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
 .gallary .gallary_image_box .gallary_image:hover .gallary_btn{
     opacity: 1;
     transform: translateY(0);

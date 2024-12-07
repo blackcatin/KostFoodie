@@ -275,6 +275,18 @@ section p{
     transition: 0.3s;
 }
 
+.menu .menu_box .menu_card .menu_info .menu_btn:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #e9802e;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
 
 
 
